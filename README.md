@@ -1,2 +1,1 @@
-# Bash-Basics
-# Bash-Basics
+Hi This is my first github account
