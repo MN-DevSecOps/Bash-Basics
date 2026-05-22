@@ -1,6 +1,6 @@
 #! /bin/bash
-PERSON1=Trump
-PERSON2=Iran
+PERSON1=Russia
+PERSON2=Ukraine
 
 echo "$PERSON1: Hey $PERSON2 ,We are going to bomb you"
 echo "$PERSON2: We are going to bomb you too"
