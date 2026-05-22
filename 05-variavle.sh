@@ -3,7 +3,7 @@
 #echo "Current timestamp is $TIMESTAMP"
 START_TIME=$(date +%s)
 
-sleep 10
+sleep 9
 
 END_TIME=$(date +%s)
 
