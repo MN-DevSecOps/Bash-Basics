@@ -7,6 +7,7 @@ echo "The sum of $NUM1 and $NUM2 is: $SUM"
 #Arrary
 FRUITS=("Apple" "Banana" "Cherry")
 echo "First fruit: ${FRUITS[0]}"
+echo "Fruits are: ${FRUITS[@]}"
 echo "All fruits: ${FRUITS[@]}" 
 echo "second fruit: ${FRUITS[1]}"
 echo "third fruit: ${FRUITS[2]}"
