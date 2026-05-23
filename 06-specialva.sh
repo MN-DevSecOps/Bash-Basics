@@ -9,4 +9,5 @@ echo "current working directory: $PWD"
 echo "PID of the script: $$"
 sleep 5
 echo "script executed in $SECONDS seconds"
-echo "PID of the last background process: $!"
+echo "PID of the last background process just now: $!"
+wait $!
