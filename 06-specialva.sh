@@ -1,17 +1,18 @@
-#! /bin/bash
-echo "All the variables are: $@"
-echo "number of variables are: $#"
-echo "script name: $0"
-echo "first variable: $1"
-echo "who is running this script: $USER"
-echo "home directory: $HOME"
-echo "current working directory: $PWD"
-echo "PID of the script: $$"
+#!/bin/bash
+
+##### Special Vars #####
+echo "All variables passed to script: $@"
+echo "Number of variables passed: $#"
+echo "First variable: $1"
+echo "Script name: $0"
+echo "Who is running this: $USER"
+echo "Which directory: $PWD"
+echo "Home directory: $HOME"
+echo "PID of the current script: $$"
 sleep 5 &
-echo "script executed in $SECONDS seconds"
-echo "PID of the last background process just now: $!"
+echo "PID of the background command running just now: $!"
 wait $!
-echo "Line number of the script: $LINENO"
-echo "Exit status of the last command: $?"
+echo "Line number: $LINENO"
+echo "Script executed in $SECONDS seconds"
 echo "Random number: $RANDOM"
-echo "Exit status of the script: $?"
+echo "Exit code of previous command: $?"
