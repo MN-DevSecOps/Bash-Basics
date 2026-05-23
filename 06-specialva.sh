@@ -2,3 +2,5 @@
 echo "All the variables are: $@"
 echo "number of variables are: $#"
 echo "script name: $0"
+echo "first variable: $1"
+echo "who is running this script: $USER"
