@@ -3,8 +3,7 @@ Name=$1
 Age=$2
 City=$3
 echo "My name is $Name, I am $Age years old and I am from $City"
-#!/bin/bash
-
+# Age calculator
 read -p "Enter your birth year: " BIRTH_YEAR
 CURRENT_YEAR=$(TZ="Asia/Kolkata" date +"%Y")
 
@@ -17,7 +16,9 @@ if [ $YEARS_LEFT -gt 0 ]; then
 else
     echo "You are already 60 or older."
 fi
-
+ echo "All variables passed to script: $@"
+ echo "Number of variables passed: $#"
+ echo "script name: $0"
 
 
 
