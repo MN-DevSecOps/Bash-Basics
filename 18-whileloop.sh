@@ -5,5 +5,5 @@ while IFS= read -r line
 #By default, it is set to space, tab and newline. 
 #By setting it to empty, we can read the entire line as a single field.
 do
-    echo "$line"
+    echo "$line"    #===>with out double it won't display the echo data
 done < 01-hello-world.sh
