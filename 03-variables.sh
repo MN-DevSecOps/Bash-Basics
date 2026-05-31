@@ -5,16 +5,10 @@
 #echo "My name is $Name, I am $Age years old and I am from $City"
 #!/bin/bash
 
-# Enter your birth year here
-BIRTH_YEAR=1984
-
-# Get the current year in IST
+read -p "Enter your birth year: " BIRTH_YEAR
 CURRENT_YEAR=$(TZ="Asia/Kolkata" date +"%Y")
 
-# Calculate age
 AGE=$((CURRENT_YEAR - BIRTH_YEAR))
-
-# Calculate years left until 60
 YEARS_LEFT=$((60 - AGE))
 
 echo "Your current age is: $AGE years"
