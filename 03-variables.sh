@@ -35,6 +35,9 @@ echo "Home directory: $HOME"
 echo "PID of the current script: $$"
 sleep 5 &
 echo "PID of the background command running just now: $!"
-echo :script executed in $SECONDS seconds
+wait $!
+echo "Line number: $LINENO"
+RANDOM_NUMBER=$(( (RANDOM % 100) + 1 ))
 echo "Random number: $RANDOM"
+echo "script executed in $SECONDS seconds"
 
