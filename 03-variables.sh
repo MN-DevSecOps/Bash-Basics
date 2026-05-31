@@ -38,6 +38,6 @@ echo "PID of the background command running just now: $!"
 wait $!
 echo "Line number: $LINENO"
 RANDOM_NUMBER=$(( (RANDOM % 100) + 1 ))
-echo "Random number: $RANDOM"
+echo "Random number between 1 and 100: $RANDOM_NUMBER"
 echo "script executed in $SECONDS seconds"
 
