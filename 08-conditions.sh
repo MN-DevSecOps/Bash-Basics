@@ -19,7 +19,8 @@
  #   echo "Given number $NUMBER is less than 20"
 #fi
 
-if [$# -eq 0 ]; then
+# Check if user provided a number
+if [ $# -eq 0 ]; then
     echo "Usage: $0 <number>"
     exit 1
 fi
