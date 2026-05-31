@@ -20,7 +20,7 @@
 #fi
 
 if [$# -eq 0 ]; then
-    echo "Please provide a number as an argument"
+    echo "Usage: $0 <number>"
     exit 1
 fi
 NUMBER=$1
