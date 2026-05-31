@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=$1
+
 
 # gt - greater than
 # lt - less than
@@ -23,7 +23,7 @@ if [$# -eq 0 ]; then
     echo "Please provide a number as an argument"
     exit 1
 fi
-
+NUMBER=$1
 
 if [ $((NUMBER % 2)) -eq 0 ]; then
     echo "Given number $NUMBER is even"
