@@ -1,8 +1,8 @@
 #! /bin/bash
-#Name=$1
-#Age=$2
-#City=$3
-#echo "My name is $Name, I am $Age years old and I am from $City"
+Name=$1
+Age=$2
+City=$3
+echo "My name is $Name, I am $Age years old and I am from $City"
 #!/bin/bash
 
 read -p "Enter your birth year: " BIRTH_YEAR
